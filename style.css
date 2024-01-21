@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+:root{
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 42%;
+    width:85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+.A .left{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.left h1{
+    font-size: 55px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    line-height: 45px;
+    color: var(--Very-Dark-Magenta);
+}
+.left p{
+    font-size: 18px;
+    color: var(--Dark-Grayish-Magenta);
+}
+.A .right{
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+.right .blocks{
+    height: 15%;
+    width: 76%;
+    background-color: var(--Light-Grayish-Magenta);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+.right .blocks:nth-child(2){
+    margin-left: 70px;
+}
+.right .blocks:nth-child(3){
+    margin-left: 140px;
+}
+.blocks .stars{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+.blocks h3{
+    font-size: 17px;
+    color: var(--Very-Dark-Magenta);
+}
+.B{
+    align-items: start;
+}
+.box{
+    height: 75%;
+    width: 32%;
+    border-radius: 8px;
+    background-color: var(--Very-Dark-Magenta);
+    padding: 20px 30px;
+}
+.B .box:nth-child(2){
+    margin-top: 40px;
+}
+.B .box:nth-child(3){
+    margin-top: 80px;
+}
+.box .group{
+    height: 40%;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+}
+.group img{
+    height: 100%;
+    border-radius: 50%;
+}
+.group .id{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.id h3{
+    font-size: 17px;
+    color: var(--White);
+    font-weight: 300;
+}
+.id h3:nth-child(2){
+    color: var(--Soft-Pink);
+}
+.box p{
+    font-size: 17px;
+    color: var(--White);
+    font-weight: 300;
+    line-height: 21px;
+}
+.attribution{ 
+    font-size: 15px;
+    text-align: center;
+ }
+ .attribution a{
+     color: hsl(228, 45%, 44%);
+}
+/* Extra Small Devices (phones) */
+@media only screen and (max-width: 575px) {
+    html, body{
+        height: 189%;
+        width: 100vw;
+        justify-content: start;
+    }
+    .container{
+        height: 48%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        padding: 60px 10px 0px 10px;
+    }
+    .A .left{
+        height: 55%;
+        width: 90%;
+        margin-bottom:40px;
+    }
+    .left h1{
+        font-size: 47px;
+        padding-bottom: 40px;
+        line-height: 49px;
+    }
+    .left p{
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .A .right{
+        height: 35%;
+        width: 100%;
+    }
+    .right .blocks{
+        height: 25%;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .right .blocks:nth-child(2){
+        margin-left: 0px;
+    }
+    .right .blocks:nth-child(3){
+        margin-left: 0px;
+    }
+    .blocks .stars{
+        width: 30%;
+    }
+    .blocks h3{
+        font-size: 15px;
+    }
+    .B{
+        height: 50%;
+        width:100%;
+        padding: 0px 10px 0px 10px;
+        margin-bottom: 17px;
+    }
+    .box{
+        height: 50%;
+        width: 100%;
+        padding: 15px 20px;
+    }
+    .B .box:nth-child(2){
+        margin-top: 15px;
+    }
+    .B .box:nth-child(3){
+        margin-top: 15px;
+    }
+    .box .group{
+        height: 35%;
+        width: 100%;
+        gap: 35px;
+    }
+    .group .id{
+        height: 60%;
+    }
+    .id h3{
+        font-size: 18px;
+    }
+    .box p{
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+/* Small Devices (portrait tablets and small desktops) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    html, body{
+        height: 158%;
+        justify-content: start;
+    }
+    .container{
+        height: 47%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        padding: 30px 50px 0px 50px;
+    }
+    .A .left{
+    height: 54%;
+    width: 100%;
+    margin-bottom: 40px;
+    }
+    .left h1{
+        font-size: 60px;
+        padding-bottom: 40px;
+        line-height: 65px;
+    }
+    .left p{
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .A .right{
+        height: 35%;
+        width: 100%;
+    }
+    .right .blocks{
+        height: 25%;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+    .right .blocks:nth-child(2){
+        margin-left: 0px;
+    }
+    .right .blocks:nth-child(3){
+        margin-left: 0px;
+    }
+    .blocks .stars{
+        width: 30%;
+    }
+    .blocks h3{
+        font-size: 17px;
+    }
+    .B{
+        height: 49%;
+        width:100%;
+        padding: 0px 50px 0px 50px;
+        margin-bottom: 17px;
+    }
+    .box{
+        height: 50%;
+        width: 100%;
+        padding: 15px 20px;
+    }
+    .B .box:nth-child(2){
+        margin-top: 15px;
+    }
+    .B .box:nth-child(3){
+        margin-top: 15px;
+    }
+    .box .group{
+        height: 35%;
+        width: 100%;
+        gap: 35px;
+    }
+    .group .id{
+        height: 65%;
+    }
+    .id h3{
+        font-size: 18px;
+    }
+}
+
+/* Medium Devices (landscape tablets and medium-sized desktops) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container{
+        height: 44%;
+        width:93%;
+        padding: 0px 10px;
+        /* background-color: pink; */
+    }
+    .left h1{
+        font-size: 45px;
+        line-height: 40px;
+    }
+    .A .right{
+        height: 80%;
+        width: 63%;
+    }
+    .right .blocks{
+        width: 68%;
+        padding: 0 0px;
+    }
+    .right .blocks:nth-child(2){
+        margin-left: 70px;
+    }
+    .right .blocks:nth-child(3){
+        margin-left: 140px;
+    }
+    .blocks .stars{
+        display: flex;
+        justify-content: space-between;
+        width: 28%;
+    }
+    .blocks h3{
+        font-size: 15px;
+    }
+    .B{
+        height: 49%;
+    }
+    .box{
+        padding: 15px 18px;
+    }
+    .box .group{
+        height: 30%;
+    }
+    .group img{
+        height: 60px;
+        border-radius: 50px;
+    }
+    .group .id{
+        height: 45%;
+    }
+    .id h3{
+        font-size: 15px;
+    }
+    .box p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+/* Large Devices (large desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container{
+        width:90%;
+        /* background-color: rgb(86, 197, 160); */
+        padding: 20px 0px;
+    }
+    .left h1{
+        font-size: 53px;
+    }
+    .A .right{
+        height: 90%;
+        width: 62.5%;
+    }
+    .right .blocks{
+        width: 420px;
+    }
+    .B{
+        /* background-color: sandybrown; */
+        align-items: start;
+    }
+    .box .group{
+        height: 37%;
+    }
+    .group .id{
+        height: 47%;
+    }
+    .id h3{
+        font-size: 16px;
+    }
+    .box p{
+        font-size: 16px;
+        line-height: 20px;
+    }  
+}
+  
+/* Extra Large Devices (extra-large desktops and high-resolution displays) */
+@media only screen and (min-width: 1200px) {
+    .B{
+        /* background-color: pink; */
+        padding: 20px 60px;
+    }
+    .box{
+        width: 32.5%;
+        padding: 20px 25px;
+    }
+}
+  
